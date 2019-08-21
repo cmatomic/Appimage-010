@@ -4,11 +4,12 @@ binpatch: true
 ingredients:
    packages: 
     - meocloud-gui
+    - python-markupsafe
+    - python-mako
+    - gobject-introspection
   dist: xenial
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
-    - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
-  #  - ded http://repos.sapo.pt/deb/beta sapo
   script:
     - wget -c http://repos.sapo.pt/deb/pool/sapo/m/meocloud-gui/meocloud-gui_0.2.29beta_amd64.deb
     - sudo dpkg -i meocloud-gui_0.2.29beta_amd64.deb
