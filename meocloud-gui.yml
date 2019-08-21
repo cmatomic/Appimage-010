@@ -1,0 +1,13 @@
+app: meocloud-gui
+binpatch: true
+
+ingredients:
+   packages: 
+    - meocloud-gui
+  dist: xenial
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
+    - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
+    - ded http://repos.sapo.pt/deb/beta sapo
+script:
+
