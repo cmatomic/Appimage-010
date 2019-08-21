@@ -10,4 +10,15 @@ ingredients:
     - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
     - ded http://repos.sapo.pt/deb/beta sapo
 script:
-
+  - cat > HandBrake.desktop <<EOF
+  - [Desktop Entry]
+  - Type=Application
+  - Name=meocloud
+  - Terminal=false
+  - Type=Application
+  - Icon=meocloud.png
+  - Exec=/usr/bin/meocloud-gui
+  - Categories=Network;FileTransfer;
+  - EOF
+  - wget https://github.com/cmatomic/MEOCloud.AppImage/raw/master/img/meocloud.png -O usr/share/icons/hicolor/256x256/apps/meocloud.png
+  - cp usr/share/icons/hicolor/256x256/apps/meocloud.png .
