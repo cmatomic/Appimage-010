@@ -10,7 +10,7 @@ ingredients:
     - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
     - ded http://repos.sapo.pt/deb/beta sapo
 script:
-  - cat > HandBrake.desktop <<EOF
+  - cat > meocloud.desktop <<EOF
   - [Desktop Entry]
   - Type=Application
   - Name=meocloud
