@@ -2,8 +2,7 @@ app: meocloud-gui
 binpatch: true
 
 ingredients:
-   packages: 
-    - meocloud-gui
+   packages:
     - python-markupsafe
     - python-mako
     - gobject-introspection
