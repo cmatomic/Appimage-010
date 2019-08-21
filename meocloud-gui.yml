@@ -8,11 +8,11 @@ ingredients:
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
     - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
-    - ded http://repos.sapo.pt/deb/beta sapo
+  #  - ded http://repos.sapo.pt/deb/beta sapo
 script:
+  - wget -qO- https://downloads.meocloud.pt/linux/repo/install_meocloud_targz.sh | sh
   - cat > meocloud.desktop <<EOF
   - [Desktop Entry]
-  - Type=Application
   - Name=meocloud
   - Terminal=false
   - Type=Application
