@@ -2,9 +2,6 @@ app: meocloud-gui
 binpatch: true
 ingredients:
    packages:
-    - python-markupsafe
-    - python-mako
-    - gobject-introspection
  dist: xenial
  sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
