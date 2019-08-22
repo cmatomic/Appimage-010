@@ -1,18 +1,17 @@
 app: meocloud-gui
 binpatch: true
 ingredients:
- dist: xenial
-   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
    packages:
     - python-markupsafe
     - python-mako
     - gobject-introspection
-    
-   script:
+ dist: xenial
+ sources:
+    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
+ script:
     - wget -c http://repos.sapo.pt/deb/pool/sapo/m/meocloud-gui/meocloud-gui_0.2.29beta_amd64.deb
     - sudo dpkg -i meocloud-gui_0.2.29beta_amd64.deb
-  script:
+ script:
     - cat > meocloud.desktop <<EOF
     - [Desktop Entry]
     - Name=meocloud
