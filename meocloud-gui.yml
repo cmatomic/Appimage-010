@@ -11,7 +11,11 @@ ingredients:
     - wget -c http://pt.archive.ubuntu.com/ubuntu/pool/main/g/gobject-introspection/gobject-introspection_1.46.0-3ubuntu1_amd64.deb
     - wget -c http://pt.archive.ubuntu.com/ubuntu/pool/universe/p/python-setproctitle/python-setproctitle_1.1.8-1build2_amd64.deb
     - wget -c http://repos.sapo.pt/deb/pool/sapo/m/meocloud-gui/meocloud-gui_0.2.29beta_amd64.deb
-    - sudo dpkg -i *
+    - sudo dpkg -i python-markupsafe_0.23-2build2_amd64.deb
+    - sudo dpkg -i gobject-introspection_1.46.0-3ubuntu1_amd64.deb
+    - sudo dpkg -i python-setproctitle_1.1.8-1build2_amd64.deb
+    - sudo dpkg -i python-setproctitle_1.1.8-1build2_amd64.deb
+    - sudo dpkg -i meocloud-gui_0.2.29beta_amd64.deb
  script:
     - cat > meocloud.desktop <<EOF
     - [Desktop Entry]
