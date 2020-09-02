@@ -19,15 +19,15 @@ ingredients:
  script:
     - cat > meocloud.desktop <<EOF
     - [Desktop Entry]
-    - Name=meocloud
+    - Name=meocloud-gui
     - Terminal=false
     - Type=Application
     - Icon=meocloud.png
     - Exec=/usr/bin/meocloud-gui
     - Categories=Network;FileTransfer;
     - StartupNotify=true
-    - MimeType=x-scheme-handler/meocloud;
-    - StartupWMClass=meocloud-gui
+    - MimeType=x-scheme-handler/meocloud-gui;
+    - StartupWMClass=meocloud-gui;
     - EOF
     - wget https://github.com/cmatomic/MEOCloud.AppImage/raw/master/img/meocloud.png -O usr/share/icons/hicolor/256x256/apps/meocloud.png
     - cp usr/share/icons/hicolor/256x256/apps/meocloud.png .
