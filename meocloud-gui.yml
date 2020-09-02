@@ -25,6 +25,9 @@ ingredients:
     - Icon=meocloud.png
     - Exec=/usr/bin/meocloud-gui
     - Categories=Network;FileTransfer;
+    - StartupNotify=true
+    - MimeType=x-scheme-handler/meocloud;
+    - StartupWMClass=meocloud-gui
     - EOF
     - wget https://github.com/cmatomic/MEOCloud.AppImage/raw/master/img/meocloud.png -O usr/share/icons/hicolor/256x256/apps/meocloud.png
     - cp usr/share/icons/hicolor/256x256/apps/meocloud.png .
